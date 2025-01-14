@@ -351,9 +351,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/09/03/nhspc2024/" title="2024資訊學科能力競賽心得文">
+                      <a href="/2024/12/24/pcic36th/" title="板橋高中第36屆資訊社 社課講義分享">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2024資訊學科能力競賽心得文</span>
+                        <span class="hidden-mobile">板橋高中第36屆資訊社 社課講義分享</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -371,20 +371,21 @@
   
     <article id="comments" lazyload>
       
-  <div id="valine"></div>
+  <div id="waline"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/waline.css')
+      Fluid.utils.createScript('https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/waline.js', function() {
         var options = Object.assign(
-          {"appId":"mhCpqJqfLggQAAVlzFZW56vQ-MdYXbMMI","appKey":"TpJdwz606ya3vOirRrYHHUkZ","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-TW","highlight":false,"recordIP":false,"serverURLs":"https://mhcpqjqf.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"serverURL":"waline-zzqh-tyellow07s-projects.vercel.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-TW","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":20},
           {
-            el: "#valine",
+            el: '#waline',
             path: window.location.pathname
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
           Fluid.plugins.imageCaption(imgSelector);
           Fluid.plugins.fancyBox(imgSelector);
         })

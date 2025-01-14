@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://tyellow07.github.io/images/nhspc2024.jpeg">
 <meta property="article:published_time" content="2024-09-03T05:34:46.000Z">
-<meta property="article:modified_time" content="2025-01-13T04:31:55.760Z">
+<meta property="article:modified_time" content="2025-01-13T16:06:50.664Z">
 <meta property="article:author" content="Tyellow">
 <meta property="article:tag" content="學科能力競賽">
 <meta name="twitter:card" content="summary_large_image">
@@ -277,7 +277,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最後更新於：2025年1月13日 下午
+                    本文最後更新於：2025年1月14日 凌晨
                   
                 
               </p>
@@ -349,7 +349,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新於</div>
-          <div>2025年1月13日</div>
+          <div>2025年1月14日</div>
         </div>
       
       
@@ -376,29 +376,6 @@
 
 
               
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2024/12/24/pcic36th/" title="板橋高中第36屆資訊社 社課講義分享">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">板橋高中第36屆資訊社 社課講義分享</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2007/10/27/aboutblog/" title="Hello Blog">
-                        <span class="hidden-mobile">Hello Blog</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
             </div>
 
             
@@ -406,20 +383,21 @@
   
     <article id="comments" lazyload>
       
-  <div id="valine"></div>
+  <div id="waline"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/waline.css')
+      Fluid.utils.createScript('https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/waline.js', function() {
         var options = Object.assign(
-          {"appId":"mhCpqJqfLggQAAVlzFZW56vQ-MdYXbMMI","appKey":"TpJdwz606ya3vOirRrYHHUkZ","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-TW","highlight":false,"recordIP":false,"serverURLs":"https://mhcpqjqf.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"serverURL":"waline-zzqh-tyellow07s-projects.vercel.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-TW","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":20},
           {
-            el: "#valine",
+            el: '#waline',
             path: window.location.pathname
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
           Fluid.plugins.imageCaption(imgSelector);
           Fluid.plugins.fancyBox(imgSelector);
         })
